@@ -1,0 +1,24 @@
+{
+  "name": "mixed-messages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emcalori/mixed-messages.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emcalori/mixed-messages/issues"
+  },
+  "homepage": "https://github.com/emcalori/mixed-messages#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
