@@ -1,6 +1,19 @@
-import {startApp, welcomeText} from "./functions.js";
+import {startApp, welcomeText,randomFortune, continueGame, finishGame} from "./functions.js";
 
 welcomeText();
-const userName = await startApp();
 
-console.log('HERE', userName);
+let cont = true;
+
+do {
+    const userName = await startApp();
+    randomFortune(userName);
+
+    const endGame = await continueGame();
+
+    if (!endGame) {
+        finishGame();
+        cont = false;
+    }
+
+} while (cont);
+
